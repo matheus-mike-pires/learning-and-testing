@@ -12,6 +12,8 @@ class Square(Shape):
   def __init__(self, color=None, side=None):
     super().__init__(color=None)
     self.side = float(input('what is the side?: '))
+  def area(self):
+    return (self.side * self.side)
 
 class Triangle(Shape):
   def __init__(self, color=None, base=None, height=None):
